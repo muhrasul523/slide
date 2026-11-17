@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mengarahkan ke Wadah Slide...</title>
+  <script>
+    (function () {
+      var l = window.location;
+      sessionStorage.setItem('wadah_redirect_path', l.pathname + l.search + l.hash);
+      // Jika diakses di subpath github.io/repo/admin -> kembali ke /repo/ atau /
+      var parts = l.pathname.split('/').filter(Boolean);
+      var target = '/';
+      if (parts.length > 1 && l.hostname.indexOf('github.io') !== -1) {
+        target = '/' + parts[0] + '/';
+      }
+      l.replace(target);
+    })();
+  </script>
+</head>
+<body></body>
+</html>

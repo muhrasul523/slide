@@ -1,0 +1,6 @@
+{
+  "name": "Wadah Slide Studio",
+  "description": "Generator dan pemutar slide presentasi dinamis bergaya Apple yang terhubung langsung dengan Google Sheets, Google Apps Script, dan GitHub Pages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

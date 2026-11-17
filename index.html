@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wadah Slide Studio — Pemutar & Generator Slide Google Sheets</title>
+    <meta
+      name="description"
+      content="Generator dan pemutar slide presentasi dinamis bergaya Apple yang terhubung langsung dengan Google Sheets, Google Apps Script, dan GitHub Pages."
+    />
+    <meta property="og:title" content="Wadah Slide Studio — Pemutar & Generator Slide Google Sheets" />
+    <meta
+      property="og:description"
+      content="Generator dan pemutar slide presentasi dinamis bergaya Apple yang terhubung langsung dengan Google Sheets, Google Apps Script, dan GitHub Pages."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var redirect = sessionStorage.getItem('wadah_redirect_path');
+        if (redirect) {
+          sessionStorage.removeItem('wadah_redirect_path');
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
